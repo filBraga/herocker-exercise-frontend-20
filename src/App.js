@@ -17,24 +17,27 @@ function App() {
   if (loading) return <h1>loading</h1>;
 
   return (
-    <table>
-      <tr>
-        {Object.keys(data[0]).map(
-          (key) => (<th key={ Math.random() }>{key}</th>),
-        )}
-      </tr>
-      <tbody>
-        {data.map((rowInfo) => (
-          <tr key={ Math.random() }>
-            {
-              Object.values(rowInfo).map(
-                (cellInfo) => (<td key={ Math.random() }>{cellInfo}</td>),
-              )
-            }
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    <>
+    <h1>Olá, sala 20</h1>
+      <table>
+        <tr>
+          {Object.keys(data[0]).map(
+            (key) => (<th key={ Math.random() }>{key}</th>),
+          )}
+        </tr>
+        <tbody>
+          {data.map((rowInfo) => (
+            <tr key={ Math.random() }>
+              {
+                Object.values(rowInfo).map(
+                  (cellInfo) => (<td key={ Math.random() }>{cellInfo}</td>),
+                )
+              }
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </>
   );
 }
 
