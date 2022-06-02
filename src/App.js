@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-    <h1>Olá, sala 20</h1>
+      <h1>Olá, sala 20</h1>
       <table>
         <tr>
           {Object.keys(data[0]).map(
